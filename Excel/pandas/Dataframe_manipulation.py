@@ -28,3 +28,39 @@ df.drop(get_index, inplace=True)
 print()
 print("Dataframe with Name6's row removed:")
 print(df)
+
+
+'''
+Prints:
+
+Original dataframe:
+    Name   Position  Salary
+0  Name1  Scientist     101
+1  Name2  Scientist      93
+2  Name3     Lawyer     150
+3  Name4   Engineer      90
+4  Name5    Teacher      90
+5  Name6      Other       0
+
+Dataframe with scientists only:
+0    Name1
+1    Name2
+Name: Name, dtype: object
+
+Dataframe with added weekly wage:
+    Name   Position  Salary  Weekly wage
+0  Name1  Scientist     101      1803.57
+1  Name2  Scientist      93      1660.71
+2  Name3     Lawyer     150      2678.57
+3  Name4   Engineer      90      1607.14
+4  Name5    Teacher      90      1607.14
+5  Name6      Other       0         0.00
+
+Dataframe with Name6's row removed:
+    Name   Position  Salary  Weekly wage
+0  Name1  Scientist     101      1803.57
+1  Name2  Scientist      93      1660.71
+2  Name3     Lawyer     150      2678.57
+3  Name4   Engineer      90      1607.14
+4  Name5    Teacher      90      1607.14
+'''
